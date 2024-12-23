@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navbar Example</title>
+  <style>
+    /* Basic reset for margins and padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Styling for the navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      padding: 10px 0;
+      z-index: 1000; /* Keep navbar above other content */
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #575757;
+      border-radius: 4px;
+    }
+
+    /* Content section styling */
+    .content {
+      padding: 20px;
+      height: 2000px; /* To make the page scrollable */
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>Scroll down to see the sticky navbar in action!</p>
+    <p id="home"><b>Home Section</b></p>
+    <p>This is some content for the Home section.</p>
+    <p id="about"><b>About Section</b></p>
+    <p>This is some content for the About section.</p>
+    <p id="services"><b>Services Section</b></p>
+    <p>This is some content for the Services section.</p>
+    <p id="contact"><b>Contact Section</b></p>
+    <p>This is some content for the Contact section.</p>
+  </div>
+
+</body>
+</html>
